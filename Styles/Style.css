@@ -296,7 +296,7 @@ footer{
         margin: 3rem;
     }
     main{
-        margin: 3rem;
+        margin: 3rem 0.5rem;
     }
     header>nav{
         flex-direction: column;
@@ -326,11 +326,13 @@ footer{
         font-size: 2rem;
     }
     .sponsor{
+        /* margin: 3rem 0; */
         grid-template-columns: repeat(3,1fr);
         gap:1rem;
         padding: 0.5rem;
         justify-items: center;
     }
+
     .company:last-child{
         grid-column: 2 / 3;
     }
