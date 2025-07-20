@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    margin: 5rem 7rem;
-}
-
 /* Google Fonts Class */
 .poppins-font{
   font-family: "Poppins", sans-serif;
@@ -29,6 +25,12 @@ body{
 
 
 /* Shared Style */
+header{
+    margin: 5rem 7rem;
+}
+main{
+    margin: 3rem 10rem;
+}
 .flexible{
     display: flex;
 }
@@ -116,9 +118,17 @@ header>nav{
 
 
 
+/* Main Design Start */
 
-
-
+/* Sponsor Section Starts */
+.sponsor{
+    padding: 2rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    align-items: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+/* Sponsor Section Ends */
 
 
 
@@ -137,7 +147,10 @@ header>nav{
 
 /* Media Query for Mobile */
 @media screen and (max-width:576px){
-    body{
+    header{
+        margin: 3rem;
+    }
+    main{
         margin: 3rem;
     }
     header>nav{
@@ -166,5 +179,63 @@ header>nav{
     }
     .banner-head{
         font-size: 2rem;
+    }
+    .sponsor{
+        grid-template-columns: repeat(3,1fr);
+        gap:1rem;
+        padding: 0.5rem;
+        justify-items: center;
+    }
+    .company:last-child{
+        grid-column: 2 / 3;
+    }
+}
+
+
+
+/* Media Query for Tablet */
+@media screen and (min-width:576px) and (max-width:992px){
+    header{
+        margin: 2rem;
+    }
+    main{
+        margin: 4rem;
+    }
+    /* header>nav{
+        flex-direction: column;
+        gap:20px;
+    } */
+    .banner-cont{
+        text-align: center;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap:2rem;
+    }
+    .sponsor{
+        grid-template-columns: repeat(12,1fr);
+        padding: 0.5rem;
+        justify-items: center;
+    }
+    .company:nth-child(1){
+        grid-column: span 3;
+    }
+    .company:nth-child(2){
+        grid-column: span 3;
+    }
+    .company:nth-child(3){
+        grid-column: span 3;
+    }
+    .company:nth-child(4){
+        grid-column: span 3;
+    }
+    .company:nth-child(5){
+        grid-column: span 4;
+    }
+    .company:nth-child(6){
+        grid-column: span 4;
+    }
+    .company:nth-child(7){
+        grid-column: span 4;
     }
 }
