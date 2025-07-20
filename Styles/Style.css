@@ -25,9 +25,6 @@
 
 
 /* Shared Style */
-header{
-    margin: 5rem 7rem;
-}
 main{
     margin: 5rem 10rem;
 }
@@ -50,7 +47,10 @@ main>section{
 
 
 /* Header Design Start */
-
+header{
+    margin: 5rem 7rem;
+    margin-bottom: 10rem;
+}
 /* Navbar start*/
 header>nav{
     justify-content: space-between;
@@ -239,8 +239,49 @@ header>nav{
 }
 /* Featured Section Ends */
 
+/* Main Design Ends */
 
 
+
+
+
+
+
+/* Footer Design Starts */
+footer{
+    background-color: #0A0826;
+    color: white;
+}
+.foot-container{
+    max-width: 16.5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.foot-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+}
+.copy{
+    font-size: 0.9rem;
+    color: #D9DBE1;
+}
+.contact>ul{
+    margin: 0 2rem;
+    padding:1.5rem 0;
+    justify-content: space-around;
+}
+.contact>ul>li{
+    list-style: none;
+}
+.contact>ul>li>a>i{
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 0 0 0.5rem #1a1635;
+    border-radius: 50%;
+}
+/* Footer Design Ends */
 
 
 
@@ -377,3 +418,4 @@ header>nav{
         text-align: center;
     }
 }
+
