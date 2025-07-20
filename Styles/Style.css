@@ -29,7 +29,10 @@ header{
     margin: 5rem 7rem;
 }
 main{
-    margin: 3rem 10rem;
+    margin: 5rem 10rem;
+}
+main>section{
+    margin: 6rem 0;
 }
 .flexible{
     display: flex;
@@ -133,6 +136,74 @@ header>nav{
 
 
 
+/* Collection Section Starts */
+.collection{
+    max-width: 66rem;
+    margin: 0 auto;
+}
+.collection-head{
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+#rate-num,.desc-color{
+    color: #5E6366;
+}
+.rate-color{
+    color: orange;
+}
+.collection-cont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.collection-card{
+    padding: 1rem;
+    max-width: 21rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 3px gainsboro;
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,0.25));
+}
+
+.coll-card-head{
+    font-size: 1.6rem;
+    color: #18191F;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+.price{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+.collection-card>p{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0.35rem 0;
+}
+#coll-btn{
+    color: #E02C6D;
+    border: none;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-top: 2rem;
+}
+.coll-btn{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+}
+/* Collection Section Ends */
+
+
 
 
 
@@ -189,6 +260,12 @@ header>nav{
     .company:last-child{
         grid-column: 2 / 3;
     }
+    .collection-cont{
+        grid-template-columns: repeat(1,1fr);
+        max-width: 21rem;
+        margin: 0 auto;
+    }
+
 }
 
 
@@ -237,5 +314,16 @@ header>nav{
     }
     .company:nth-child(7){
         grid-column: span 4;
+    }
+
+
+    .collection-cont{
+        grid-template-columns: repeat(2,1fr);
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+    .collection-card:last-child{
+        grid-column: span 2;
+        margin: 0 auto;
     }
 }
